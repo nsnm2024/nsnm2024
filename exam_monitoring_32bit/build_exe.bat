@@ -5,7 +5,7 @@ REM  المتطلبات: Python 3.x بنسخة 32-bit (من python.org) + pip
 REM ============================================================
 
 REM 1) تحقق أن بايثون المثبت هو 32-bit فعليًا
-python -c "import struct,sys; print('bits:', struct.calcsize('P')*8); sys.exit(0 if struct.calcsize('P')==4 else 1)" || (echo خطأ: شغّل هذا الملف بـ Python 32-bit و重试 & exit /b 1)
+python -c "import struct,sys; print('bits:', struct.calcsize('P')*8); sys.exit(0 if struct.calcsize('P')==4 else 1)" || (echo خطأ: شغّل هذا الملف بـ Python 32-bit & exit /b 1)
 
 REM 2) تثبيت الاعتماديات (نسخ 32-bit تلقائيًا عبر pip الحالي)
 python -m pip install --upgrade pip
